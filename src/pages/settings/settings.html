@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-navbar>
+    <ion-title>Profil</ion-title>
+    </ion-navbar>
+</ion-header>
+
+    <ion-content padding>
+        <p class="par">Connexion</p>
+        <p class="paragraphe1">Bienvenue de nouveau à CarLoc. Entrez vos coordonnées pour se connecter. </p>
+        <form >
+        <label for="username" class="champs">Nom d'utilisateur:</label>
+       <br>
+       <input [(ngModel)]="username" type="text"  class="box2" name="username" required style="font-size: 18px;" >
+       <br>
+       <label for="username" class="champs">Mot de passe :</label>
+       <br>
+       <input [(ngModel)]="password" type="password" class="box2" name="password" required style="font-size: 18px;">
+        <!-- <ion-item>
+            <ion-label class="champs" floating>Adresse mail</ion-label>
+            <ion-label fixed class="placehol">Entrer votre adresse mail</ion-label>
+            <ion-input class="box" type="email"  aria-placeholder=" Entrer votre adresse mail"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label class="champs" floating>Mot de passe</ion-label>
+            <ion-label fixed class="placehol">Entrer votre mot de passe</ion-label>
+            <ion-input  class="box" type="password">Entrer votre mot de passe</ion-input>
+        </ion-item>
+              -->
+      
+        <button ion-button block  (click)=" onGoToDashboard() ">Se connecter </button>
+        </form>
+       <p class="t1">Vous n’avez pas un compte?</p>  
+       <p class="t2 btn-styl"  (click)=" onGoToCreationCompte()"><a>Créer votre compte par ici</a></p>
+
+
+
+
+
+
+
+
+
+
+    </ion-content>
+    <ion-footer padding>
+    </ion-footer>
+    

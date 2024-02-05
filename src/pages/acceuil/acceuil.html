@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+      <ion-title>Acceuil</ion-title>
+  </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+      <p class="paragraph">Démarrez l'aventure</p>
+      <ion-list>
+          <div class="btn-style3"  (click)="onGoToCars()"><a  >Liste des voitures &nbsp;&nbsp;&nbsp;  </a></div>
+          <div class="btn-style3"><a href="#">Réserver une voiture</a></div>
+      </ion-list>
+      <p class="paragraphe1">Créer votre compte pour réserver votre voiture</p>
+      <div class="btn-style4"  (click)="onGoToCreation()"><a>Créer mon compte</a></div>
+  <div class="card">
+      <div class="card_top">
+        <strong class="name">Comment ça marche?</strong>
+      </div>
+      <div class="card_mid">
+        <img src="../../assets/imgs/acceuil (2).jpg" alt="">
+      </div>
+      <div class="card_bottom" (click)="onGoToExplication()">
+        <div>
+          <small>C'est par ici</small>
+          <img class="fleche" src="../../assets/imgs/fleche-droite.png" alt="" >
+        </div>
+      </div>
+    </div>
+  
+  </ion-content>
+  <ion-footer padding>
+  
+  </ion-footer>

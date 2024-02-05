@@ -1,0 +1,120 @@
+<!-- <ion-header>
+  <ion-navbar>
+  <ion-title>Creation de compte</ion-title>
+  </ion-navbar>
+</ion-header>
+
+  <ion-content padding>
+      <p class="pa">Creation de compte</p>
+      <p class="paragraphe1">Veillez entrer vos coordonnées pour creer votre compte. </p>
+ -->
+
+      <!-- <ion-item>
+        <ion-label class="champs"class="champs" floating>Nom</ion-label>
+        <ion-label fixed class="placehol">Entrer votre nom</ion-label>
+        <ion-input class="box" type="text"   [(ngModel)]="nom"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label class="champs" floating>Prenom</ion-label>
+      <ion-label fixed class="placehol">Entrer votre prenom</ion-label>
+      <ion-input class="box" type="text" [(ngModel)]="prenom" ></ion-input>
+  </ion-item>
+      <ion-item>
+          <ion-label class="champs" floating>Adresse mail</ion-label>
+          <ion-label fixed class="placehol">Entrer votre adresse mail</ion-label>
+          <ion-input class="box" type="email"  [(ngModel)]="email"  ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label class="champs" floating>Telephone</ion-label>
+        <ion-label fixed class="placehol">Entrer votre num de tél</ion-label>
+        <ion-input class="box" type="text"  [(ngModel)]="telephone"  ></ion-input>
+    </ion-item>
+      <ion-item>
+          <ion-label class="champs" floating>Mot de passe</ion-label>
+          <ion-label fixed class="placehol">Entrer votre mot de passe</ion-label>
+          <ion-input  class="box" type="password" [(ngModel)]="mdp" >Entrer votre mot de passe</ion-input>
+      </ion-item> -->
+
+        <!-- <ion-item>
+          <ion-select aria-label="type" placeholder="Select type">
+            <ion-option value="Particulier">Particulier</ion-option>
+            <ion-option value="oranges">Entreprise</ion-option>
+            <ion-option value="bananas">Partenaire</ion-option>
+          </ion-select>
+        </ion-item>
+      -->
+      <!-- <button ion-button icon-start class="creationcompte"  clear (tap)="saveMyAccount()" >Creer un compte </button> -->
+
+
+      <!-- hedha ena zetou  -->
+      <!-- <input [(ngModel)]="nom" type="text"       placeholder="Entrer votre nom" required>
+      <input [(ngModel)]="prenom" type="text"    placeholder="Entrer votre prenom" required>
+      <input [(ngModel)]="email" type="email"    placeholder="Entrer votre adresse mail" required>
+      <input [(ngModel)]="telephone" type="text" placeholder="Entrer votre num de tél" required>
+      <input [(ngModel)]="mdp"type="password"    placeholder="Entrer votre mot de passe" required>
+      <button ion-button block (click)="saveMyAccount()" >Creer un compte </button> -->
+
+
+
+  <!-- </ion-content>
+  <ion-footer padding>
+  </ion-footer> -->
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+
+  
+ 
+     
+<ion-header>
+  <ion-navbar>
+  <ion-title>Creation de compte</ion-title>
+  </ion-navbar>
+</ion-header>
+
+  <ion-content padding>
+      <p class="pa">Creation de compte</p>
+      <p class="paragraphe1">Veillez entrer vos coordonnées pour creer votre compte. </p>
+ 
+ 
+    <form >
+    
+       <label for="username" class="champs">Nom d'utilisateur:</label>
+       <br>
+       <input [(ngModel)]="username" type="text"  class="box2" name="username" required style="font-size: 18px;" >
+       <br>
+       <label for="username" class="champs">Email:</label>
+       <br>
+       <input [(ngModel)]="email" type="email" class="box2"  name="email" required style="font-size: 18px;">
+       <br>
+       <label for="username" class="champs">Mot de passe :</label>
+       <br>
+       <input [(ngModel)]="password" type="password" class="box2" name="password" required style="font-size: 18px;">
+       <br>
+       <label for="username" class="champs">Confirmer votre mot de passe :</label>
+       <br>
+       <input [(ngModel)]="confirmPassword" type="password" class="box2" name="confirmPassword" required style="font-size: 18px;">
+       <br>
+       <label for="username" class="champs">Date d'anniversaire:</label>
+       <br>
+       <input [(ngModel)]="dob" type="date" class="box2" name="dob">
+       <br>
+       <br>
+       <br>
+       <br>
+        <button  ion-button block (click)="saveMyAccount()" class="creationcompte" >Creer un compte</button>
+       
+
+        
+    </form>
+    
+ </ion-content>
+  <ion-footer padding>
+  </ion-footer>

@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Ajouter voiture</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-content padding>
+    <p class="par">Ajouter voiture</p>
+
+    <ion-item>
+        <ion-label for="nomv" class="champs" floating>Nom de la voiture</ion-label>
+        <ion-input [(ngModel)]="nomv" required  class="box" aria-placeholder=" Entrer votre adresse mail"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label for="prix" class="champs" floating>Prix de la voiture</ion-label>
+      <ion-input [(ngModel)]="prix" required class="box" aria-placeholder=" Entrer le prix de la voiture"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label for="url" class="champs" floating>URL de l'image de la voiture</ion-label>
+    <ion-input [(ngModel)]="url" required  class="box" aria-placeholder="Entrer l'URL de l'image de la voiture"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label for="type" class="champs" floating>Type de transmission</ion-label>
+  <ion-input [(ngModel)]="type" required  class="box" aria-placeholder=" Entrer le type de transmission"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label for="nombreportes" class="champs" floating>Nombre de portes</ion-label>
+  <ion-input [(ngModel)]="nombreportes" required  class="box" aria-placeholder=" Entrerle nombre de portes"></ion-input>
+</ion-item>
+<!-- <ion-item>
+  <ion-label class="champs" floating>Nombre de passagers</ion-label>
+  <ion-label fixed class="placehol">Entrer le nombre de passagers</ion-label>
+  <ion-input class="box" aria-placeholder=" Entrer le nombre de passagers"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label class="champs" floating>Description de la voiture</ion-label>
+  <ion-label fixed class="placehol">Entrer la description de la voiture</ion-label>
+  <ion-input class="box" aria-placeholder=" Entrer la description de la voiture"></ion-input>
+</ion-item> -->
+  
+    <button ion-button icon-start (click)="saveMyCar()"class="ajout">Ajouter </button>
+
+
+</ion-content>

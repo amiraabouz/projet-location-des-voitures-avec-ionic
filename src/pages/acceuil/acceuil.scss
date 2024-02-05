@@ -1,0 +1,209 @@
+.btn-style3 a {
+    text-decoration: none;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 14px 78px;
+    display: inline-block;
+    margin: 7px 23px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+	border-radius: 50px;
+    color: #fff;
+    overflow: hidden;
+	background: #25221e
+}
+
+.btn-style3 a:after {
+    width: 200px;
+    height: 30px;
+    background: rgba(255,255,255,0.3);
+    opacity: 1;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transition: all 0.5s ease !important;
+}
+
+.btn-style3 a:hover:after {
+    top: 50%;
+    left: 500px;
+}
+
+.btn-style3 a:hover {
+    box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+	background:#35312c
+}
+
+.btn-style3 a:active {
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.16);
+    -ms-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+	background:#000
+}
+.paragraph{
+    font-family:Bahnschrift SemiBold;
+    font-size: 23px;
+    margin-left: 72px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.verticalHorizontal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+:root{
+    --width: 414px;
+    --height: 825px;
+    --bg: #dde2e7;
+    --containerPadding: 30px;
+    --blue: 28, 105, 212;
+    --lightgray: #f8f9f9;
+    --lightgray2: #f4f4f8;
+    --lightgray3: #f8f8f8;
+    --txtcolo1: #5f6061;
+    --transition: 200ms;
+    --transitionDelay1: 100ms;
+    --transitionDelay2: 300ms;
+    --transitionDelay3: 450ms;
+}
+
+
+.card{
+    transition: var(--transition);
+    transition-delay: var(--transitionDelay2);
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+    + .card{
+        margin-top: 30px;
+    }
+    &_top{
+        @extend.verticalHorizontal;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        > .name{
+            font-size: 16px;
+        }
+        > span{
+            font-size: 14px;
+            background-color: var(--bg);
+            padding: 4px 11px;
+            border-radius: 20px;
+            font-weight: 700;
+            color: var(--txtcolo1);
+        }
+    }
+    &_mid{
+        padding: 20px;
+        text-align: center;
+        > img{
+            width: 100%;
+            max-width: 306px;
+            border-radius: 17px;
+        }
+    }
+    &_bottom{
+        padding: 20px;
+        background-color: var(--lightgray3);
+        @extend .verticalHorizontal;
+        > div{
+            @extend .verticalHorizontal;
+        }
+        // > div > img{
+        //     width: 20px;
+        //     margin-left: 234px ;
+        // }
+        > div > small{
+            margin-left: -16px;
+            color: var(--txtcolo1);
+            font-size: 86%;
+        }
+    }
+    .show &{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+.paragraphe1{
+    font-family:Bahnschrift SemiBold;
+    font-size: 18px;
+    margin: 20px;}
+    .btn-style4 a {
+        text-decoration: none;
+        font-size: inherit;
+        cursor: pointer;
+        padding: 12px 25px;
+        display: inline-block;
+        margin-left:19px ;
+        margin-bottom:19px ;
+        margin-top:0px ;
+        letter-spacing: 1px;
+        font-weight: 700;
+        outline: none;
+        position: relative;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+        border-radius: 50px;
+        color: #fff;
+        overflow: hidden;
+        background: #73a482
+    }
+    
+    .btn-style4 a:after {
+        width: 200px;
+        height: 30px;
+        background: rgba(255,255,255,0.3);
+        opacity: 1;
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -50px;
+        transition: all 0.5s ease !important;
+    }
+    
+    .btn-style4 a:hover:after {
+        top: 50%;
+        left: 500px;
+    }
+    
+    .btn-style4 a:hover {
+        box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+        -ms-transform: translateY(-3px);
+        transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+        background:#73a482
+    }
+    
+    .btn-style4 a:active {
+        box-shadow: 0 10px 18px rgba(0, 0, 0, 0.16);
+        -ms-transform: translateY(-1px);
+        transform: translateY(-1px);
+        -webkit-transform: translateY(-1px);
+        background:#597e64
+    }
+
+    .fleche{
+        width: 20px;
+        margin-left: 234px ;
+    }

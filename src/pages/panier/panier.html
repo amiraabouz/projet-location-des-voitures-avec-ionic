@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Panier</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<p class="par">Panier</p>
+<div class="hh">
+<img class="imggg" [src]="car.image"/> 
+<div class="texttt">
+  <ion-icon class="icona" name="trash-outline"></ion-icon>
+<p>{{car.nom}}</p>
+<p class="parag">Prix : {{car.prix}}</p>
+</div>
+</div>
+<p class="tot">Total : {{car.prix}}</p>
+<div class="btn-sty" style="margin: 165px 71px 0px -1px;" (click)="onGoToReservation()" ><a>Valider ma réservation</a></div>
+
+</ion-content>

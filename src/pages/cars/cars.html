@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+      <ion-title>Voitures</ion-title>
+  </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <p class="paragraph">Liste des voitures</p>
+
+    
+    <div class="card button"  *ngFor="let car of(carsList | async)">
+      <div class="card_top">
+        <span>{{car.prix}}</span>
+      </div>
+
+      <div class="card_mid">
+      <img class="voiture" [src]="car.image"/> 
+      
+      <div class="details">
+        <ion-card-title class="n">{{car.nom}}</ion-card-title>
+
+      </div>
+      </div>
+
+      <div class="card_bottom"  (click)="onGoToCars(car)">
+        <div >
+             <p> Plus de details</p>     
+              <img class="fleche_car" src="../../assets/imgs/fleche-droite.png"alt="" >
+     
+
+        </div>
+      </div>
+    </div>
+  
+  </ion-content>
+
+
+  <ion-footer padding>
+
+  </ion-footer>

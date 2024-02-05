@@ -1,0 +1,31 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+ 
+
+<h1 class="name"> {{car.nom}}</h1>
+<img  [src]="car.image"/> 
+<h2 class="titre">Caractéristiques :</h2>
+<p class="parag">Prix : {{car.prix}}</p>
+<p class="parag">Catégorie du véhicule :{{car.categorie_du_vehicule}}</p>
+<p class="parag">N_immatriculation : {{car.N_immatriculation}}</p>
+<p class="parag">Marque : {{car.Marque}}</p>
+<p class="parag">Nombre de portes : {{car.Nombredeportes}}</p>
+<p class="parag">Nombre de passagers : {{car.Nombredepassagers}}</p>
+
+<h2 class="titre">Equipements :</h2>
+<p class="parag">Accessoires :</p>
+<p class="parag"> {{car.Accessoires}}</p>
+<p class="parag">Equipement speciaux : </p>
+<p class="parag">{{car.Equipementspeciaux}}</p>
+
+
+<div class="btn-style3"(click)="onGoToPanier(car)" ><a  >Ajouter au panier &nbsp;&nbsp;&nbsp;  </a></div>
+
+</ion-content>
